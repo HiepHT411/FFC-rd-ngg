@@ -8,7 +8,6 @@ SECRET_NUMBER = $(( $RANDOM % 1000 + 1 ))
 echo "Enter your username:";
 read USERNAME
 
-# RETURNING_USER=$($PSQL "SELECT username FROM users WHERE username = '$USERNAME'")
 USER_ID=$($PSQL "select user_id from users where username = '$USERNAME'")
 
 if [[ -z $USER_ID ]]
