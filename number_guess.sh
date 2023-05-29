@@ -30,7 +30,7 @@ else
 
 fi
 
-TRIES=0
+TRIES = 0
 echo -e "\nGuess the secret number between 1 and 1000:"
 
 while [[ ! $GUESS -eq $SECRET_NUMBER ]];
