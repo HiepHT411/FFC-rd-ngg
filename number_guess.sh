@@ -59,4 +59,4 @@ do
 done
 
 echo -e "\nYou guessed it in $TRIES tries. The secret number was $SECRET_NUMBER. Nice job!"
-INSERTED_TO_GAMES=$($PSQL "insert into games(user_id, guesses) values($USER_ID, $TRIES)")
+INSERTED_TO_GAMES = $($PSQL "insert into games(user_id, guesses) values($USER_ID, $TRIES)")
